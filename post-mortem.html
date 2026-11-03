@@ -1,0 +1,138 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ALGO DESK — Post-Mortem</title>
+<style>
+:root{--bg:#05070c;--panel:rgba(16,22,36,.72);--line:rgba(148,163,184,.14);--text:#e7eef7;--muted:#93a4bb;--faint:#64748f;--green:#22e584;--cyan:#22d3ee;--violet:#a78bfa;--red:#fb4d6d;--orange:#fb923c;--mono:ui-monospace,Menlo,Consolas,monospace;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,Roboto,Arial,sans-serif}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 18px 56px}
+h1{margin:0;font-size:clamp(36px,7vw,64px);line-height:1;background:linear-gradient(92deg,var(--green),var(--cyan) 48%,var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.muted{color:var(--muted)} .faint{color:var(--faint);font-size:13px}
+a{color:var(--cyan)}
+.tickbtn{font-family:var(--mono);font-size:13px;font-weight:700;padding:7px 12px;border-radius:8px;background:rgba(120,150,200,.12);border:1px solid var(--line);color:var(--muted);cursor:pointer;margin:3px}
+.tickbtn.on{color:#05070c;background:var(--green);border-color:var(--green)}
+.card{border:1px solid var(--line);border-radius:16px;background:var(--panel);padding:16px;margin-top:14px}
+canvas{width:100%;display:block;background:#070b14;border-radius:8px;cursor:crosshair}
+.lbl{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin:14px 0 4px}
+table{width:100%;border-collapse:collapse;font-size:14px} th,td{padding:8px 6px;border-bottom:1px solid var(--line);text-align:left} th{color:var(--faint);font-size:12px}
+.g{color:var(--green)} .r{color:var(--red)}
+</style></head><body><div class="wrap">
+<p class="faint"><a href="index.html">← ALGO DESK</a> · POST-MORTEM · Built from our trade records, not a live broker fetch · No keys in the browser</p>
+<h1>Post-Mortem</h1>
+<p class="muted">Open a ticker, see that day's chart, and see every trade we made on it, right on the chart, with its reason. Candles and indicators are precomputed by our own refresh job from public market data and saved in this repo as chart files — the page itself fetches nothing from a broker.</p>
+<div id="tickers"></div>
+<p class="faint" id="meta"></p>
+<div class="card">
+<div class="lbl">Price — 1-min candles · scroll = zoom · drag = pan · double-click = reset · click = pin crosshair</div>
+<canvas id="price" height="340"></canvas>
+<div class="faint">— MA20 &nbsp; — MA50 &nbsp; — MA200 &nbsp; — EMA50 &nbsp; - - BB(20,2) &nbsp; ▲ Buy &nbsp; ▼ Sell &nbsp; ▽ Short &nbsp; △ Cover &nbsp; C▲ Buy Call &nbsp; C▼ Sell Call &nbsp; P▼ Buy Put &nbsp; P▲ Sell Put &nbsp; ★ Better entry — hover / click a marker for details</div>
+<div class="lbl">RSI (14)</div><canvas id="rsi" height="90"></canvas>
+<div class="lbl">MACD (12, 26, 9)</div><canvas id="macd" height="90"></canvas>
+<div class="lbl">EMA50 − MA50 spread · orange line = spread · bars = ROC (1-bar change) · ▲▼ = reversal</div><canvas id="spread" height="90"></canvas>
+<div class="lbl">Volume</div><canvas id="vol" height="70"></canvas>
+<div class="lbl">Z-score (20) · price deviation from 20-bar mean · ±2σ = BB bands</div><canvas id="z" height="90"></canvas>
+</div>
+<div class="card" id="detail"><p class="muted">Click a trade marker, or a row below, to see its details here.</p></div>
+<div class="card"><h3 style="margin:0">Trades on this chart</h3><div id="trades"></div></div>
+<p class="faint">Notes: MA200 needs 200 bars, so it starts partway through the day. For Nov 2 AI trades, the exact indicator snapshot was not recorded in the ledger that day, so the reason says so instead of inventing one. From Tue Nov 3, fills carry the logged rule and reason. Sells with no buy in our records were exits of holdings open before Day 0.</p>
+</div>
+<script>
+let D=null, view=[0,389], pin=null, markers=[];
+const $=id=>document.getElementById(id);
+function drawLine(ctx, arr, x, y, color, dash){
+  ctx.strokeStyle=color; ctx.lineWidth=1.5; ctx.setLineDash(dash||[]); ctx.beginPath(); let started=false;
+  for(let i=view[0]; i<=view[1]; i++){ const v=arr[i]; if(v==null) {started=false; continue;}
+    const px=x(i), py=y(v); if(!started){ctx.moveTo(px,py); started=true;} else ctx.lineTo(px,py); }
+  ctx.stroke(); ctx.setLineDash([]);
+}
+function panel(id, draw){
+  const c=$(id), ctx=c.getContext('2d'), W=c.clientWidth, H=c.height;
+  if(c.width!==W*c.devicePixelRatio){c.width=W; }
+  ctx.clearRect(0,0,c.width,c.height);
+  const n=Math.max(1, view[1]-view[0]+1);
+  const x=i=>(i-view[0])/(n-1)*(c.width-40)+20;
+  draw(ctx, x, c.width, c.height);
+  if(pin!=null && pin>=view[0] && pin<=view[1]){
+    ctx.strokeStyle='rgba(231,238,247,.4)'; ctx.beginPath(); ctx.moveTo(x(pin),0); ctx.lineTo(x(pin),c.height); ctx.stroke();
+  }
+  return {x, W:c.width, H:c.height};
+}
+function render(){
+  if(!D) return;
+  const lo=D.low.slice(view[0],view[1]+1), hi=D.high.slice(view[0],view[1]+1);
+  let pmin=Math.min(...lo), pmax=Math.max(...hi); const pad=(pmax-pmin)*0.05||1; pmin-=pad; pmax+=pad;
+  markers=[];
+  panel('price',(ctx,x,W,H)=>{
+    const y=v=>H-20-(v-pmin)/(pmax-pmin)*(H-40);
+    const n=view[1]-view[0]+1, bw=Math.max(1,(W-40)/n*0.7);
+    for(let i=view[0]; i<=view[1]; i++){
+      const cx=x(i), up=D.close[i]>=D.open[i];
+      ctx.strokeStyle=up?'#22e584':'#fb4d6d'; ctx.fillStyle=ctx.strokeStyle;
+      ctx.beginPath(); ctx.moveTo(cx,y(D.high[i])); ctx.lineTo(cx,y(D.low[i])); ctx.stroke();
+      ctx.fillRect(cx-bw/2, y(Math.max(D.open[i],D.close[i])), bw, Math.max(1,Math.abs(y(D.open[i])-y(D.close[i]))));
+    }
+    drawLine(ctx,D.ma20,x,y,'#93a4bb'); drawLine(ctx,D.ma50,x,y,'#22d3ee'); drawLine(ctx,D.ma200,x,y,'#a78bfa'); drawLine(ctx,D.ema50,x,y,'#fb923c');
+    drawLine(ctx,D.bb_up,x,y,'rgba(147,164,187,.6)',[5,4]); drawLine(ctx,D.bb_lo,x,y,'rgba(147,164,187,.6)',[5,4]);
+    D.trades.forEach(t=>{
+      const idx=D.times.indexOf(t.time.replace(' ET',''));
+      if(idx<0||idx<view[0]||idx>view[1]) return;
+      const px=x(idx), py=t.side==='BUY'?y(D.low[idx])+14:y(D.high[idx])-14;
+      ctx.fillStyle=t.side==='BUY'?'#22e584':'#fb4d6d'; ctx.font='16px monospace'; ctx.textAlign='center';
+      ctx.fillText(t.side==='BUY'?'▲':'▼', px, py);
+      markers.push({px,py,trade:t,idx});
+    });
+  });
+  panel('rsi',(ctx,x,W,H)=>{
+    const y=v=>H-10-v/100*(H-20);
+    drawLine(ctx,D.rsi,x,y,'#a78bfa');
+    ctx.strokeStyle='rgba(147,164,187,.4)'; [30,70].forEach(v=>{ctx.beginPath();ctx.moveTo(20,y(v));ctx.lineTo(W-20,y(v));ctx.stroke();});
+  });
+  panel('macd',(ctx,x,W,H)=>{
+    const vals=D.macd.slice(view[0],view[1]+1).filter(v=>v!=null); let m=Math.max(...vals.map(Math.abs),0.1);
+    const y=v=>H/2-v/m*(H/2-10);
+    drawLine(ctx,D.macd,x,y,'#22d3ee'); drawLine(ctx,D.macd_signal,x,y,'#fb923c');
+    ctx.strokeStyle='rgba(147,164,187,.4)'; ctx.beginPath(); ctx.moveTo(20,H/2); ctx.lineTo(W-20,H/2); ctx.stroke();
+  });
+  panel('spread',(ctx,x,W,H)=>{
+    const s=D.spread.slice(view[0],view[1]+1).filter(v=>v!=null), r=D.spread_roc.slice(view[0],view[1]+1).filter(v=>v!=null);
+    let m=Math.max(...s.map(Math.abs),...r.map(Math.abs),0.1); const y=v=>H/2-v/m*(H/2-10);
+    for(let i=view[0]; i<=view[1]; i++){ const v=D.spread_roc[i]; if(v==null) continue; ctx.fillStyle=v>=0?'#22e584':'#fb4d6d'; const yy=y(0); ctx.fillRect(x(i)-1, Math.min(yy,y(v)), 2, Math.abs(y(v)-yy)); }
+    drawLine(ctx,D.spread,x,y,'#fb923c');
+  });
+  panel('vol',(ctx,x,W,H)=>{
+    const v=D.volume.slice(view[0],view[1]+1), mx=Math.max(...v,1);
+    for(let i=view[0]; i<=view[1]; i++){ const h=D.volume[i]/mx*(H-10); ctx.fillStyle='#64748f'; ctx.fillRect(x(i)-1,H-h,2,h); }
+  });
+  panel('z',(ctx,x,W,H)=>{
+    const y=v=>H/2-v/3*(H/2-10);
+    drawLine(ctx,D.zscore,x,y,'#22d3ee');
+    ctx.strokeStyle='rgba(147,164,187,.4)'; [-2,0,2].forEach(v=>{ctx.beginPath();ctx.moveTo(20,y(v));ctx.lineTo(W-20,y(v));ctx.stroke();});
+  });
+}
+function showTrade(t){
+  $('detail').innerHTML='<h3 style="margin:0">'+t.symbol+' — '+t.side+' '+t.qty+' @ $'+t.price+'</h3><p class="muted">'+t.date+' '+t.time+' · total $'+(t.qty*t.price).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})+'</p><p>'+t.reason+'</p>';
+}
+function load(sym){
+  document.querySelectorAll('.tickbtn').forEach(b=>b.classList.toggle('on', b.textContent===sym));
+  fetch('charts/2026-11-02_'+sym+'.json').then(r=>r.json()).then(d=>{
+    D=d; view=[0,d.close.length-1]; pin=null; render();
+    $('meta').textContent=d.symbol+' · '+d.date+' · '+d.close.length+' one-minute bars · '+d.trades.length+' trades in our records';
+    $('trades').innerHTML = d.trades.length ? '<table><tr><th>Time</th><th>Side</th><th>Qty</th><th>Price</th><th>Total</th></tr>'+d.trades.map((t,i)=>'<tr style="cursor:pointer" onclick="window.__show('+i+')"><td>'+t.time+'</td><td>'+t.side+'</td><td>'+t.qty+'</td><td>$'+t.price+'</td><td>$'+(t.qty*t.price).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})+'</td></tr>').join('')+'</table>' : '<p class="muted">No trades in our records for this ticker on this date. Chart and indicators still shown.</p>';
+    window.__show=i=>showTrade(d.trades[i]);
+    if(d.trades.length) showTrade(d.trades[0]);
+  });
+}
+fetch('charts/index.json').then(r=>r.json()).then(idx=>{
+  $('tickers').innerHTML=idx.symbols.map(s=>'<button class="tickbtn" onclick="load(\''+s+'\')">'+s+'</button>').join('');
+  load('TSLA');
+});
+let drag=null;
+$('price').addEventListener('mousedown',e=>{drag={x:e.offsetX, v0:view[0], v1:view[1]};});
+window.addEventListener('mousemove',e=>{ if(!drag||!D) return; const W=$('price').clientWidth, span=drag.v1-drag.v0, dx=Math.round((drag.x-e.offsetX)/(W-40)*span); const n=D.close.length; let a=Math.max(0,drag.v0+dx), b=a+span; if(b>=n){b=n-1; a=b-span;} view=[a,b]; render(); });
+window.addEventListener('mouseup',()=>drag=null);
+document.querySelectorAll('canvas').forEach(c=>{
+  c.addEventListener('wheel',e=>{ e.preventDefault(); if(!D) return; const span=view[1]-view[0]+1, ns=Math.max(20, Math.min(D.close.length, Math.round(span*(e.deltaY>0?1.2:0.8)))); const c0=(view[0]+view[1])/2; let a=Math.max(0,Math.round(c0-ns/2)), b=Math.min(D.close.length-1,a+ns-1); a=b-ns+1; view=[a,b]; render(); },{passive:false});
+  c.addEventListener('dblclick',()=>{ if(!D) return; view=[0,D.close.length-1]; pin=null; render(); });
+  c.addEventListener('click',e=>{ if(!D) return; const W=c.clientWidth, n=view[1]-view[0]+1, idx=view[0]+Math.round((e.offsetX-20)/(W-40)*(n-1)); pin=idx; const m=markers.find(m=>Math.abs(m.px-e.offsetX)<12); if(m) showTrade(m.trade); render(); });
+});
+window.addEventListener('resize',render);
+</script>
+</body></html>
