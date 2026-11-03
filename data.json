@@ -1,22 +1,755 @@
 {
-  "generated_at_et": "2026-11-02 21:20 ET",
+  "generated_at_et": "2026-11-03 15:14 ET",
   "day0_date": "2026-11-02",
   "new": {
     "label": "New Main (legacy main robots)",
-    "cash": 100000.0,
-    "buying_power": 400000.0,
-    "portfolio": 100000.0,
-    "positions": [],
-    "transactions": [],
-    "tx_count": 0
+    "cash": 73262.66,
+    "buying_power": 279483.96,
+    "portfolio": 99470.85,
+    "positions": [
+      {
+        "symbol": "AMZN",
+        "qty": 50.0,
+        "mv": 12573.5,
+        "upl": 32.0
+      },
+      {
+        "symbol": "GOOGL",
+        "qty": 50.0,
+        "mv": 13909.75,
+        "upl": -32.28
+      },
+      {
+        "symbol": "META",
+        "qty": 20.0,
+        "mv": 12371.4,
+        "upl": -95.4
+      },
+      {
+        "symbol": "MSFT",
+        "qty": -50.0,
+        "mv": -26122.0,
+        "upl": -588.98
+      },
+      {
+        "symbol": "MSTR",
+        "qty": 100.0,
+        "mv": 13476.0,
+        "upl": -18.2988
+      }
+    ],
+    "transactions": [
+      {
+        "id": "af96dca2-205d-47c5-88ef-b7985354df95",
+        "time": "15:14 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 134.61,
+        "account": "new"
+      },
+      {
+        "id": "7705913a-8ac7-4d8c-a951-9b5b437a57af",
+        "time": "15:14 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 134.84,
+        "account": "new"
+      },
+      {
+        "id": "ec5a8bcc-a6dd-4e6a-a806-1782bd75c899",
+        "time": "15:14 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 134.77,
+        "account": "new"
+      },
+      {
+        "id": "8389594f-ff27-4e2c-bfce-9eb44b146ad9",
+        "time": "15:14 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 134.85,
+        "account": "new"
+      },
+      {
+        "id": "ef98d617-8963-4b3f-9f7f-a2a25a41689c",
+        "time": "15:13 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 134.91,
+        "account": "new"
+      },
+      {
+        "id": "6592cb27-ead0-433a-af17-b167e7d6a49d",
+        "time": "15:13 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 135.06,
+        "account": "new"
+      },
+      {
+        "id": "cd3a19c9-53e2-407d-bd3f-98d7597f8ae1",
+        "time": "15:12 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 134.93,
+        "account": "new"
+      },
+      {
+        "id": "cfbbd4a4-b6df-4c31-8fe0-c13669bf6e9b",
+        "time": "15:12 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 135.0524,
+        "account": "new"
+      },
+      {
+        "id": "da699139-d19c-4ba0-84fd-ed0d4ea27631",
+        "time": "15:09 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 135.284,
+        "account": "new"
+      },
+      {
+        "id": "c1708a79-13a9-4d2b-9597-1ed4a9cc84b6",
+        "time": "15:08 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 135.09,
+        "account": "new"
+      },
+      {
+        "id": "accaeb25-ee2b-40bb-a130-c02bca2a1420",
+        "time": "15:07 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 135.12,
+        "account": "new"
+      },
+      {
+        "id": "b706a243-69fe-4636-bb14-3e790fbfeb09",
+        "time": "15:07 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 135.22,
+        "account": "new"
+      },
+      {
+        "id": "583a4fcb-90c5-4d51-8902-f841f3749b91",
+        "time": "15:02 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 134.85,
+        "account": "new"
+      },
+      {
+        "id": "b75b33cf-5b70-4313-8c01-3d13e3abb5fa",
+        "time": "15:02 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 134.94,
+        "account": "new"
+      },
+      {
+        "id": "4b54f7e4-2ebe-407e-85e9-1c25d08c4e5d",
+        "time": "15:01 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 134.7244,
+        "account": "new"
+      },
+      {
+        "id": "97971d93-1edf-4e90-af1a-f1e3f249eaea",
+        "time": "15:01 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 134.83,
+        "account": "new"
+      },
+      {
+        "id": "3aabdb4c-619c-4161-910a-2313f946d873",
+        "time": "15:00 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 134.86,
+        "account": "new"
+      },
+      {
+        "id": "73811830-a778-40a2-8024-82bdacd9c6e9",
+        "time": "15:00 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 134.86,
+        "account": "new"
+      },
+      {
+        "id": "cc1d49a6-a0ea-45a3-8ecc-b36432c9365a",
+        "time": "14:59 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 134.71,
+        "account": "new"
+      },
+      {
+        "id": "e7fd74f9-dd20-4f14-b2ec-7d64aacba902",
+        "time": "14:55 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 134.7928,
+        "account": "new"
+      },
+      {
+        "id": "fed5ee0e-32b5-40ad-a817-4871480ad77e",
+        "time": "14:55 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 134.82,
+        "account": "new"
+      },
+      {
+        "id": "c29ab0be-0e23-473c-95bd-b452f7ef81fe",
+        "time": "14:55 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 134.9112,
+        "account": "new"
+      },
+      {
+        "id": "3d0a56bb-0126-4447-b311-74ac741717e6",
+        "time": "14:54 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 134.9,
+        "account": "new"
+      },
+      {
+        "id": "fd394325-4296-4a4f-b093-0a138872cab8",
+        "time": "14:54 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 135.15,
+        "account": "new"
+      },
+      {
+        "id": "94abf766-0cc5-44ed-b187-799278e7396a",
+        "time": "14:13 ET",
+        "date": "2026-11-03",
+        "symbol": "AMZN",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 250.83,
+        "account": "new"
+      },
+      {
+        "id": "b39b826a-25fc-433b-a449-fb6d5b1021ff",
+        "time": "14:00 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 135.93,
+        "account": "new"
+      },
+      {
+        "id": "c4990bfa-f8a9-41fb-87d5-8c523f40838b",
+        "time": "13:46 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 136.31,
+        "account": "new"
+      },
+      {
+        "id": "f149cbe9-146d-4f8a-ac84-c6091c2275ff",
+        "time": "13:17 ET",
+        "date": "2026-11-03",
+        "symbol": "AMZN",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 250.6,
+        "account": "new"
+      },
+      {
+        "id": "d77b9411-c35b-4e70-acf8-7a2bc9fcbb00",
+        "time": "13:05 ET",
+        "date": "2026-11-03",
+        "symbol": "META",
+        "side": "BUY",
+        "qty": 20.0,
+        "price": 623.34,
+        "account": "new"
+      },
+      {
+        "id": "b2e07097-e99a-49cb-ad02-19df383f9885",
+        "time": "12:48 ET",
+        "date": "2026-11-03",
+        "symbol": "META",
+        "side": "SELL",
+        "qty": 20.0,
+        "price": 622.4425,
+        "account": "new"
+      },
+      {
+        "id": "c99c5b0d-ee6a-4a3b-9ed9-5247947c150a",
+        "time": "12:03 ET",
+        "date": "2026-11-03",
+        "symbol": "AMZN",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 247.78,
+        "account": "new"
+      },
+      {
+        "id": "4f53f05c-8597-4ded-a4ce-49535d4cb5a8",
+        "time": "12:03 ET",
+        "date": "2026-11-03",
+        "symbol": "META",
+        "side": "BUY",
+        "qty": 20.0,
+        "price": 621.18,
+        "account": "new"
+      },
+      {
+        "id": "d14374f2-8ea5-4849-b72e-9b46f347b2fa",
+        "time": "11:15 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 137.71,
+        "account": "new"
+      },
+      {
+        "id": "8a95a1f9-421a-462f-8536-8457afc10f78",
+        "time": "11:15 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 137.78,
+        "account": "new"
+      },
+      {
+        "id": "e2f33591-d682-4ef3-b1c8-31a3f90bae8e",
+        "time": "11:15 ET",
+        "date": "2026-11-03",
+        "symbol": "GOOGL",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 278.8406,
+        "account": "new"
+      },
+      {
+        "id": "45871112-4844-4567-9caa-420610441232",
+        "time": "11:08 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 137.53,
+        "account": "new"
+      },
+      {
+        "id": "ec11c3bc-25d7-4f1d-ac0a-5a13445bb025",
+        "time": "09:49 ET",
+        "date": "2026-11-03",
+        "symbol": "MSFT",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 510.6604,
+        "account": "new"
+      },
+      {
+        "id": "371e1153-ce0e-406e-868b-cab36ac12999",
+        "time": "09:46 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 134.01,
+        "account": "new"
+      },
+      {
+        "id": "74d078f9-f45c-4f48-a3c4-09ea4a2dcd19",
+        "time": "09:46 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 134.26,
+        "account": "new"
+      },
+      {
+        "id": "fe16662c-57b7-4a2a-8907-fa8d949e0113",
+        "time": "09:45 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 133.5876,
+        "account": "new"
+      }
+    ],
+    "tx_count": 40
   },
   "ai": {
     "label": "For AI (momentum + ai_analyst)",
-    "cash": 131911.71,
-    "buying_power": 527646.84,
-    "portfolio": 131911.71,
-    "positions": [],
+    "cash": 27820.97,
+    "buying_power": 401411.48,
+    "portfolio": 131437.97,
+    "positions": [
+      {
+        "symbol": "GOOGL",
+        "qty": 100.0,
+        "mv": 27819.5,
+        "upl": -192.77
+      },
+      {
+        "symbol": "JNJ",
+        "qty": 100.0,
+        "mv": 26692.0,
+        "upl": -270.56
+      },
+      {
+        "symbol": "META",
+        "qty": 50.0,
+        "mv": 30928.5,
+        "upl": -236.66
+      },
+      {
+        "symbol": "NVDA",
+        "qty": 50.0,
+        "mv": 10328.5,
+        "upl": -94.26
+      },
+      {
+        "symbol": "SLB",
+        "qty": 150.0,
+        "mv": 7848.0,
+        "upl": -28.5
+      }
+    ],
     "transactions": [
+      {
+        "id": "e4097508-9238-41a9-b497-b69d5e1a04fe",
+        "time": "14:50 ET",
+        "date": "2026-11-03",
+        "symbol": "MSFT",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 521.634,
+        "account": "ai"
+      },
+      {
+        "id": "4e759e7d-c813-486f-8cc0-35bbbcf61563",
+        "time": "14:38 ET",
+        "date": "2026-11-03",
+        "symbol": "MSFT",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 521.45,
+        "account": "ai"
+      },
+      {
+        "id": "e6f4d42d-eecc-4ea2-be9f-83c533a1ae50",
+        "time": "13:05 ET",
+        "date": "2026-11-03",
+        "symbol": "NVDA",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 208.4552,
+        "account": "ai"
+      },
+      {
+        "id": "b7d3fbde-d686-4796-9058-eb34e0d27a1e",
+        "time": "13:05 ET",
+        "date": "2026-11-03",
+        "symbol": "NVDA",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 208.41,
+        "account": "ai"
+      },
+      {
+        "id": "f0ccab4b-5159-46a6-946d-c61c0d89f1ef",
+        "time": "13:04 ET",
+        "date": "2026-11-03",
+        "symbol": "BAC",
+        "side": "SELL",
+        "qty": 100.0,
+        "price": 49.71,
+        "account": "ai"
+      },
+      {
+        "id": "5564dca7-e513-4cdd-ad4a-8e7fa83241a7",
+        "time": "13:04 ET",
+        "date": "2026-11-03",
+        "symbol": "NVDA",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 208.41,
+        "account": "ai"
+      },
+      {
+        "id": "11bd4ae1-6b39-4e20-933c-dcb4ecb598ea",
+        "time": "12:53 ET",
+        "date": "2026-11-03",
+        "symbol": "META",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 623.3032,
+        "account": "ai"
+      },
+      {
+        "id": "95a09802-846e-499a-9318-1c7dd634198b",
+        "time": "12:49 ET",
+        "date": "2026-11-03",
+        "symbol": "META",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 623.16,
+        "account": "ai"
+      },
+      {
+        "id": "1d1ce784-ad25-4a69-b296-fd8499eebffa",
+        "time": "12:34 ET",
+        "date": "2026-11-03",
+        "symbol": "MSFT",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 516.78,
+        "account": "ai"
+      },
+      {
+        "id": "8cd38a62-9aae-4ac3-9172-f671290679dc",
+        "time": "12:33 ET",
+        "date": "2026-11-03",
+        "symbol": "NVDA",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 208.32,
+        "account": "ai"
+      },
+      {
+        "id": "2a504043-3951-4933-88d0-d26e6a9ad637",
+        "time": "12:04 ET",
+        "date": "2026-11-03",
+        "symbol": "META",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 621.47,
+        "account": "ai"
+      },
+      {
+        "id": "17384be4-acd3-4ca3-aaa6-b2b1b0f8ffd5",
+        "time": "11:58 ET",
+        "date": "2026-11-03",
+        "symbol": "MSFT",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 516.3084,
+        "account": "ai"
+      },
+      {
+        "id": "9668eab2-2246-44f5-b00a-c5df65a91aaf",
+        "time": "11:23 ET",
+        "date": "2026-11-03",
+        "symbol": "SLB",
+        "side": "BUY",
+        "qty": 150.0,
+        "price": 52.51,
+        "account": "ai"
+      },
+      {
+        "id": "ec3f687b-0aef-4283-9cbd-bff6429fb5f2",
+        "time": "11:21 ET",
+        "date": "2026-11-03",
+        "symbol": "SLB",
+        "side": "SELL",
+        "qty": 150.0,
+        "price": 52.52,
+        "account": "ai"
+      },
+      {
+        "id": "27701cbd-c33f-4ce3-b85f-66e03d0b14c8",
+        "time": "11:21 ET",
+        "date": "2026-11-03",
+        "symbol": "META",
+        "side": "SELL",
+        "qty": 100.0,
+        "price": 619.560701,
+        "account": "ai"
+      },
+      {
+        "id": "75ceb199-706b-47c6-8700-03c7de1e8b0d",
+        "time": "11:10 ET",
+        "date": "2026-11-03",
+        "symbol": "PFE",
+        "side": "SELL",
+        "qty": 150.0,
+        "price": 30.41,
+        "account": "ai"
+      },
+      {
+        "id": "5be005c5-623a-4c5e-9ee6-1c6a3f047066",
+        "time": "09:49 ET",
+        "date": "2026-11-03",
+        "symbol": "MSFT",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 510.46,
+        "account": "ai"
+      },
+      {
+        "id": "6e012839-83b3-46c8-a0db-7c2cbf64e435",
+        "time": "09:40 ET",
+        "date": "2026-11-03",
+        "symbol": "ADBE",
+        "side": "SELL",
+        "qty": 100.0,
+        "price": 241.6,
+        "account": "ai"
+      },
+      {
+        "id": "217eefa4-622a-4fb4-8e71-2855e03073b6",
+        "time": "09:35 ET",
+        "date": "2026-11-03",
+        "symbol": "NVDA",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 208.2748,
+        "account": "ai"
+      },
+      {
+        "id": "4a85ad46-450e-4226-87e0-5be85fd0f9c3",
+        "time": "09:34 ET",
+        "date": "2026-11-03",
+        "symbol": "GOOGL",
+        "side": "BUY",
+        "qty": 100.0,
+        "price": 280.1227,
+        "account": "ai"
+      },
+      {
+        "id": "c50741c1-c24e-4496-9a23-6ee92e7deb6b",
+        "time": "09:34 ET",
+        "date": "2026-11-03",
+        "symbol": "META",
+        "side": "BUY",
+        "qty": 100.0,
+        "price": 613.1575,
+        "account": "ai"
+      },
+      {
+        "id": "ab447403-a5a5-47f1-81e8-64d24cbca6da",
+        "time": "09:34 ET",
+        "date": "2026-11-03",
+        "symbol": "JNJ",
+        "side": "BUY",
+        "qty": 100.0,
+        "price": 269.6256,
+        "account": "ai"
+      },
+      {
+        "id": "32123925-294f-4f33-9d66-7023371a3cb4",
+        "time": "09:34 ET",
+        "date": "2026-11-03",
+        "symbol": "BAC",
+        "side": "BUY",
+        "qty": 100.0,
+        "price": 49.406,
+        "account": "ai"
+      },
+      {
+        "id": "858ce311-219a-4fda-ae85-2e3b034857ea",
+        "time": "09:34 ET",
+        "date": "2026-11-03",
+        "symbol": "SLB",
+        "side": "BUY",
+        "qty": 150.0,
+        "price": 52.319067,
+        "account": "ai"
+      },
+      {
+        "id": "7585c06a-bead-4d80-a21f-038c9db53406",
+        "time": "09:33 ET",
+        "date": "2026-11-03",
+        "symbol": "MSFT",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 509.69,
+        "account": "ai"
+      },
+      {
+        "id": "1988f559-66e5-43b2-a22a-af84fa0fa39e",
+        "time": "09:33 ET",
+        "date": "2026-11-03",
+        "symbol": "PFE",
+        "side": "BUY",
+        "qty": 150.0,
+        "price": 30.94,
+        "account": "ai"
+      },
+      {
+        "id": "4b346385-6c01-4de3-b605-ae248bda4c35",
+        "time": "09:32 ET",
+        "date": "2026-11-03",
+        "symbol": "ADBE",
+        "side": "BUY",
+        "qty": 100.0,
+        "price": 245.75,
+        "account": "ai"
+      },
       {
         "id": "1fc4b47f-1ab6-4858-9987-35b426865413",
         "time": "15:58 ET",
@@ -568,25 +1301,47 @@
         "account": "ai"
       }
     ],
-    "tx_count": 55
+    "tx_count": 82
   },
   "combined": {
-    "cash": 231911.71,
-    "buying_power": 927646.84,
-    "portfolio": 231911.71,
-    "positions": 0
+    "cash": 101083.63,
+    "buying_power": 680895.44,
+    "portfolio": 230908.82,
+    "positions": 10
   },
   "post_mortem": {
     "symbols": [
       {
-        "symbol": "AMZN",
+        "symbol": "ADBE",
         "buys": 1,
-        "sells": 2,
-        "buy_qty": 50.0,
+        "sells": 1,
+        "buy_qty": 100.0,
         "sell_qty": 100.0,
-        "matched_qty": 50.0,
-        "matched_realized": -189.87999999999943,
+        "matched_qty": 100.0,
+        "matched_realized": -415.00000000000057,
+        "prior_exit_qty": 0.0,
+        "open_lots_qty": 0
+      },
+      {
+        "symbol": "AMZN",
+        "buys": 3,
+        "sells": 3,
+        "buy_qty": 150.0,
+        "sell_qty": 150.0,
+        "matched_qty": 100.0,
+        "matched_realized": -48.87999999999977,
         "prior_exit_qty": 50.0,
+        "open_lots_qty": 50.0
+      },
+      {
+        "symbol": "BAC",
+        "buys": 1,
+        "sells": 1,
+        "buy_qty": 100.0,
+        "sell_qty": 100.0,
+        "matched_qty": 100.0,
+        "matched_realized": 30.400000000000205,
+        "prior_exit_qty": 0.0,
         "open_lots_qty": 0
       },
       {
@@ -613,14 +1368,14 @@
       },
       {
         "symbol": "GOOGL",
-        "buys": 3,
+        "buys": 5,
         "sells": 4,
-        "buy_qty": 200.0,
+        "buy_qty": 350.0,
         "sell_qty": 250.0,
         "matched_qty": 200.0,
         "matched_realized": -661.0900000000044,
         "prior_exit_qty": 50.0,
-        "open_lots_qty": 0
+        "open_lots_qty": 150.0
       },
       {
         "symbol": "HON",
@@ -635,14 +1390,14 @@
       },
       {
         "symbol": "JNJ",
-        "buys": 2,
+        "buys": 3,
         "sells": 2,
-        "buy_qty": 200.0,
+        "buy_qty": 300.0,
         "sell_qty": 200.0,
         "matched_qty": 200.0,
         "matched_realized": 177.99999999999727,
         "prior_exit_qty": 0.0,
-        "open_lots_qty": 0
+        "open_lots_qty": 100.0
       },
       {
         "symbol": "MA",
@@ -657,14 +1412,14 @@
       },
       {
         "symbol": "META",
-        "buys": 3,
-        "sells": 3,
-        "buy_qty": 150.0,
-        "sell_qty": 150.0,
-        "matched_qty": 150.0,
-        "matched_realized": -727.6400000000024,
+        "buys": 8,
+        "sells": 6,
+        "buy_qty": 390.0,
+        "sell_qty": 320.0,
+        "matched_qty": 320.0,
+        "matched_realized": 22.430099999992308,
         "prior_exit_qty": 0.0,
-        "open_lots_qty": 0
+        "open_lots_qty": 70.0
       },
       {
         "symbol": "MMM",
@@ -679,25 +1434,58 @@
       },
       {
         "symbol": "MSFT",
-        "buys": 4,
-        "sells": 5,
-        "buy_qty": 250.0,
-        "sell_qty": 300.0,
-        "matched_qty": 250.0,
-        "matched_realized": -1320.2999500000033,
-        "prior_exit_qty": 50.0,
+        "buys": 7,
+        "sells": 9,
+        "buy_qty": 400.0,
+        "sell_qty": 500.0,
+        "matched_qty": 400.0,
+        "matched_realized": -1238.9999500000074,
+        "prior_exit_qty": 100.0,
         "open_lots_qty": 0
       },
       {
+        "symbol": "MSTR",
+        "buys": 17,
+        "sells": 15,
+        "buy_qty": 850.0,
+        "sell_qty": 750.0,
+        "matched_qty": 700.0,
+        "matched_realized": -134.2800000000011,
+        "prior_exit_qty": 50.0,
+        "open_lots_qty": 150.0
+      },
+      {
         "symbol": "NVDA",
-        "buys": 3,
-        "sells": 3,
+        "buys": 6,
+        "sells": 5,
+        "buy_qty": 300.0,
+        "sell_qty": 250.0,
+        "matched_qty": 250.0,
+        "matched_realized": -229.98999999999938,
+        "prior_exit_qty": 0.0,
+        "open_lots_qty": 50.0
+      },
+      {
+        "symbol": "PFE",
+        "buys": 1,
+        "sells": 1,
         "buy_qty": 150.0,
         "sell_qty": 150.0,
         "matched_qty": 150.0,
-        "matched_realized": -232.2499999999991,
+        "matched_realized": -79.50000000000017,
         "prior_exit_qty": 0.0,
         "open_lots_qty": 0
+      },
+      {
+        "symbol": "SLB",
+        "buys": 2,
+        "sells": 1,
+        "buy_qty": 300.0,
+        "sell_qty": 150.0,
+        "matched_qty": 150.0,
+        "matched_realized": 30.139950000000937,
+        "prior_exit_qty": 0.0,
+        "open_lots_qty": 150.0
       },
       {
         "symbol": "TSLA",
@@ -733,6 +1521,6 @@
         "open_lots_qty": 0
       }
     ],
-    "total_matched_realized": -1648.9198500000086
+    "total_matched_realized": -1242.5298000000193
   }
 }
