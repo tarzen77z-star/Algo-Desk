@@ -1,41 +1,41 @@
 {
-  "generated_at_et": "2026-11-03 15:14 ET",
+  "generated_at_et": "2026-11-03 15:21 ET",
   "day0_date": "2026-11-02",
   "new": {
     "label": "New Main (legacy main robots)",
     "cash": 73262.66,
-    "buying_power": 279483.96,
-    "portfolio": 99470.85,
+    "buying_power": 279593.12,
+    "portfolio": 99564.26,
     "positions": [
       {
         "symbol": "AMZN",
         "qty": 50.0,
-        "mv": 12573.5,
-        "upl": 32.0
+        "mv": 12594.5,
+        "upl": 53.0
       },
       {
         "symbol": "GOOGL",
         "qty": 50.0,
-        "mv": 13909.75,
-        "upl": -32.28
+        "mv": 13945.0,
+        "upl": 2.97
       },
       {
         "symbol": "META",
         "qty": 20.0,
-        "mv": 12371.4,
-        "upl": -95.4
+        "mv": 12391.1,
+        "upl": -75.7
       },
       {
         "symbol": "MSFT",
         "qty": -50.0,
-        "mv": -26122.0,
-        "upl": -588.98
+        "mv": -26151.5,
+        "upl": -618.48
       },
       {
         "symbol": "MSTR",
         "qty": 100.0,
-        "mv": 13476.0,
-        "upl": -18.2988
+        "mv": 13522.0,
+        "upl": 27.7012
       }
     ],
     "transactions": [
@@ -445,38 +445,38 @@
   "ai": {
     "label": "For AI (momentum + ai_analyst)",
     "cash": 27820.97,
-    "buying_power": 401411.48,
-    "portfolio": 131437.97,
+    "buying_power": 401828.68,
+    "portfolio": 131586.97,
     "positions": [
       {
         "symbol": "GOOGL",
         "qty": 100.0,
-        "mv": 27819.5,
-        "upl": -192.77
+        "mv": 27886.0,
+        "upl": -126.27
       },
       {
         "symbol": "JNJ",
         "qty": 100.0,
-        "mv": 26692.0,
-        "upl": -270.56
+        "mv": 26687.0,
+        "upl": -275.56
       },
       {
         "symbol": "META",
         "qty": 50.0,
-        "mv": 30928.5,
-        "upl": -236.66
+        "mv": 30978.0,
+        "upl": -187.16
       },
       {
         "symbol": "NVDA",
         "qty": 50.0,
-        "mv": 10328.5,
-        "upl": -94.26
+        "mv": 10351.0,
+        "upl": -71.76
       },
       {
         "symbol": "SLB",
         "qty": 150.0,
-        "mv": 7848.0,
-        "upl": -28.5
+        "mv": 7861.5,
+        "upl": -15.0
       }
     ],
     "transactions": [
@@ -1305,8 +1305,8 @@
   },
   "combined": {
     "cash": 101083.63,
-    "buying_power": 680895.44,
-    "portfolio": 230908.82,
+    "buying_power": 681421.8,
+    "portfolio": 231151.22999999998,
     "positions": 10
   },
   "post_mortem": {
