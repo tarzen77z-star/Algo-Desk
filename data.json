@@ -1,44 +1,66 @@
 {
-  "generated_at_et": "2026-11-03 15:21 ET",
+  "generated_at_et": "2026-11-03 16:38 ET",
   "day0_date": "2026-11-02",
   "new": {
     "label": "New Main (legacy main robots)",
-    "cash": 73262.66,
-    "buying_power": 279593.12,
-    "portfolio": 99564.26,
+    "cash": 66973.12,
+    "buying_power": 323190.72,
+    "portfolio": 99886.92,
     "positions": [
-      {
-        "symbol": "AMZN",
-        "qty": 50.0,
-        "mv": 12594.5,
-        "upl": 53.0
-      },
-      {
-        "symbol": "GOOGL",
-        "qty": 50.0,
-        "mv": 13945.0,
-        "upl": 2.97
-      },
       {
         "symbol": "META",
         "qty": 20.0,
-        "mv": 12391.1,
-        "upl": -75.7
-      },
-      {
-        "symbol": "MSFT",
-        "qty": -50.0,
-        "mv": -26151.5,
-        "upl": -618.48
+        "mv": 12435.8,
+        "upl": -31.0
       },
       {
         "symbol": "MSTR",
-        "qty": 100.0,
-        "mv": 13522.0,
-        "upl": 27.7012
+        "qty": 150.0,
+        "mv": 20478.0,
+        "upl": 215.21115
       }
     ],
     "transactions": [
+      {
+        "id": "94aa6b05-0c62-4712-9b52-6235e678c9ab",
+        "time": "15:55 ET",
+        "date": "2026-11-03",
+        "symbol": "GOOGL",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 279.86,
+        "account": "new"
+      },
+      {
+        "id": "9a3a6523-4210-4917-bbeb-cc360a0d0ae2",
+        "time": "15:55 ET",
+        "date": "2026-11-03",
+        "symbol": "MSFT",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 522.2116,
+        "account": "new"
+      },
+      {
+        "id": "ea50aeb0-b2ab-4048-98b3-3bec41bafdf8",
+        "time": "15:32 ET",
+        "date": "2026-11-03",
+        "symbol": "AMZN",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 251.9306,
+        "account": "new"
+      },
+      {
+        "id": "d8b02dff-743e-47c6-b0e9-fe74fe64669b",
+        "time": "15:25 ET",
+        "date": "2026-11-03",
+        "symbol": "MSTR",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 135.3698,
+        "account": "new"
+      },
       {
         "id": "af96dca2-205d-47c5-88ef-b7985354df95",
         "time": "15:14 ET",
@@ -440,46 +462,105 @@
         "account": "new"
       }
     ],
-    "tx_count": 40
+    "tx_count": 44
   },
   "ai": {
     "label": "For AI (momentum + ai_analyst)",
-    "cash": 27820.97,
-    "buying_power": 401828.68,
-    "portfolio": 131586.97,
-    "positions": [
-      {
-        "symbol": "GOOGL",
-        "qty": 100.0,
-        "mv": 27886.0,
-        "upl": -126.27
-      },
-      {
-        "symbol": "JNJ",
-        "qty": 100.0,
-        "mv": 26687.0,
-        "upl": -275.56
-      },
-      {
-        "symbol": "META",
-        "qty": 50.0,
-        "mv": 30978.0,
-        "upl": -187.16
-      },
-      {
-        "symbol": "NVDA",
-        "qty": 50.0,
-        "mv": 10351.0,
-        "upl": -71.76
-      },
-      {
-        "symbol": "SLB",
-        "qty": 150.0,
-        "mv": 7861.5,
-        "upl": -15.0
-      }
-    ],
+    "cash": 131674.26,
+    "buying_power": 526697.04,
+    "portfolio": 131674.26,
+    "positions": [],
     "transactions": [
+      {
+        "id": "7ce17279-99b4-4a48-b5ca-7a7e2cb14051",
+        "time": "15:58 ET",
+        "date": "2026-11-03",
+        "symbol": "SLB",
+        "side": "SELL",
+        "qty": 150.0,
+        "price": 52.13,
+        "account": "ai"
+      },
+      {
+        "id": "7913e9e9-f8d1-43ae-bd86-2d7f97b0da55",
+        "time": "15:58 ET",
+        "date": "2026-11-03",
+        "symbol": "NVDA",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 206.95,
+        "account": "ai"
+      },
+      {
+        "id": "64e8b8b0-9f8e-4c65-957f-21bd9b740d54",
+        "time": "15:58 ET",
+        "date": "2026-11-03",
+        "symbol": "META",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 621.1604,
+        "account": "ai"
+      },
+      {
+        "id": "a7cd19c0-7bf7-4c0b-8566-1b37cc08b019",
+        "time": "15:58 ET",
+        "date": "2026-11-03",
+        "symbol": "JNJ",
+        "side": "SELL",
+        "qty": 100.0,
+        "price": 265.917,
+        "account": "ai"
+      },
+      {
+        "id": "32f1e328-c589-4023-b07c-8fff2bc520aa",
+        "time": "15:56 ET",
+        "date": "2026-11-03",
+        "symbol": "MSFT",
+        "side": "SELL",
+        "qty": 50.0,
+        "price": 522.1348,
+        "account": "ai"
+      },
+      {
+        "id": "86700c13-5198-435a-a926-90fcc3d2ddbb",
+        "time": "15:56 ET",
+        "date": "2026-11-03",
+        "symbol": "GOOGL",
+        "side": "SELL",
+        "qty": 100.0,
+        "price": 280.174901,
+        "account": "ai"
+      },
+      {
+        "id": "40f73913-bc16-441e-b53d-4c2ada70774a",
+        "time": "15:47 ET",
+        "date": "2026-11-03",
+        "symbol": "MSFT",
+        "side": "BUY",
+        "qty": 50.0,
+        "price": 521.7332,
+        "account": "ai"
+      },
+      {
+        "id": "1e0b20b4-cda4-46bc-8d67-c124e7cb768e",
+        "time": "15:41 ET",
+        "date": "2026-11-03",
+        "symbol": "JNJ",
+        "side": "BUY",
+        "qty": 100.0,
+        "price": 265.52,
+        "account": "ai"
+      },
+      {
+        "id": "64924dec-2875-484a-9fb6-61d252de5548",
+        "time": "15:40 ET",
+        "date": "2026-11-03",
+        "symbol": "JNJ",
+        "side": "SELL",
+        "qty": 100.0,
+        "price": 265.51,
+        "account": "ai"
+      },
       {
         "id": "e4097508-9238-41a9-b497-b69d5e1a04fe",
         "time": "14:50 ET",
@@ -1301,13 +1382,13 @@
         "account": "ai"
       }
     ],
-    "tx_count": 82
+    "tx_count": 91
   },
   "combined": {
-    "cash": 101083.63,
-    "buying_power": 681421.8,
-    "portfolio": 231151.22999999998,
-    "positions": 10
+    "cash": 198647.38,
+    "buying_power": 849887.76,
+    "portfolio": 231561.18,
+    "positions": 2
   },
   "post_mortem": {
     "symbols": [
@@ -1325,13 +1406,13 @@
       {
         "symbol": "AMZN",
         "buys": 3,
-        "sells": 3,
+        "sells": 4,
         "buy_qty": 150.0,
-        "sell_qty": 150.0,
-        "matched_qty": 100.0,
-        "matched_realized": -48.87999999999977,
+        "sell_qty": 200.0,
+        "matched_qty": 150.0,
+        "matched_realized": 6.1499999999995225,
         "prior_exit_qty": 50.0,
-        "open_lots_qty": 50.0
+        "open_lots_qty": 0
       },
       {
         "symbol": "BAC",
@@ -1369,13 +1450,13 @@
       {
         "symbol": "GOOGL",
         "buys": 5,
-        "sells": 4,
+        "sells": 6,
         "buy_qty": 350.0,
-        "sell_qty": 250.0,
-        "matched_qty": 200.0,
-        "matched_realized": -661.0900000000044,
+        "sell_qty": 400.0,
+        "matched_qty": 350.0,
+        "matched_realized": -604.8999000000066,
         "prior_exit_qty": 50.0,
-        "open_lots_qty": 150.0
+        "open_lots_qty": 0
       },
       {
         "symbol": "HON",
@@ -1390,14 +1471,14 @@
       },
       {
         "symbol": "JNJ",
-        "buys": 3,
-        "sells": 2,
-        "buy_qty": 300.0,
-        "sell_qty": 200.0,
-        "matched_qty": 200.0,
-        "matched_realized": 177.99999999999727,
+        "buys": 4,
+        "sells": 4,
+        "buy_qty": 400.0,
+        "sell_qty": 400.0,
+        "matched_qty": 400.0,
+        "matched_realized": -193.8600000000065,
         "prior_exit_qty": 0.0,
-        "open_lots_qty": 100.0
+        "open_lots_qty": 0
       },
       {
         "symbol": "MA",
@@ -1413,13 +1494,13 @@
       {
         "symbol": "META",
         "buys": 8,
-        "sells": 6,
+        "sells": 7,
         "buy_qty": 390.0,
-        "sell_qty": 320.0,
-        "matched_qty": 320.0,
-        "matched_realized": 22.430099999992308,
+        "sell_qty": 370.0,
+        "matched_qty": 370.0,
+        "matched_realized": -84.70990000000597,
         "prior_exit_qty": 0.0,
-        "open_lots_qty": 70.0
+        "open_lots_qty": 20.0
       },
       {
         "symbol": "MMM",
@@ -1434,36 +1515,36 @@
       },
       {
         "symbol": "MSFT",
-        "buys": 7,
-        "sells": 9,
-        "buy_qty": 400.0,
-        "sell_qty": 500.0,
-        "matched_qty": 400.0,
-        "matched_realized": -1238.9999500000074,
+        "buys": 9,
+        "sells": 10,
+        "buy_qty": 500.0,
+        "sell_qty": 550.0,
+        "matched_qty": 450.0,
+        "matched_realized": -1218.9199500000059,
         "prior_exit_qty": 100.0,
-        "open_lots_qty": 0
+        "open_lots_qty": 50.0
       },
       {
         "symbol": "MSTR",
-        "buys": 17,
+        "buys": 18,
         "sells": 15,
-        "buy_qty": 850.0,
+        "buy_qty": 900.0,
         "sell_qty": 750.0,
         "matched_qty": 700.0,
         "matched_realized": -134.2800000000011,
         "prior_exit_qty": 50.0,
-        "open_lots_qty": 150.0
+        "open_lots_qty": 200.0
       },
       {
         "symbol": "NVDA",
         "buys": 6,
-        "sells": 5,
+        "sells": 6,
         "buy_qty": 300.0,
-        "sell_qty": 250.0,
-        "matched_qty": 250.0,
-        "matched_realized": -229.98999999999938,
+        "sell_qty": 300.0,
+        "matched_qty": 300.0,
+        "matched_realized": -305.2499999999995,
         "prior_exit_qty": 0.0,
-        "open_lots_qty": 50.0
+        "open_lots_qty": 0
       },
       {
         "symbol": "PFE",
@@ -1479,13 +1560,13 @@
       {
         "symbol": "SLB",
         "buys": 2,
-        "sells": 1,
+        "sells": 2,
         "buy_qty": 300.0,
-        "sell_qty": 150.0,
-        "matched_qty": 150.0,
-        "matched_realized": 30.139950000000937,
+        "sell_qty": 300.0,
+        "matched_qty": 300.0,
+        "matched_realized": -26.86004999999838,
         "prior_exit_qty": 0.0,
-        "open_lots_qty": 150.0
+        "open_lots_qty": 0
       },
       {
         "symbol": "TSLA",
@@ -1521,6 +1602,445 @@
         "open_lots_qty": 0
       }
     ],
-    "total_matched_realized": -1242.5298000000193
+    "total_matched_realized": -1722.4897000000224,
+    "matched_cost": 1073633.1899500003,
+    "closed_trades": [
+      {
+        "symbol": "COIN",
+        "date": "2026-11-02",
+        "time": "09:57 ET",
+        "qty": 150.0,
+        "realized": 69.29999999999836
+      },
+      {
+        "symbol": "MSFT",
+        "date": "2026-11-02",
+        "time": "10:09 ET",
+        "qty": 50.0,
+        "realized": 59.6200500000009
+      },
+      {
+        "symbol": "TSLA",
+        "date": "2026-11-02",
+        "time": "10:10 ET",
+        "qty": 50.0,
+        "realized": 259.99999999999943
+      },
+      {
+        "symbol": "COIN",
+        "date": "2026-11-02",
+        "time": "10:11 ET",
+        "qty": 150.0,
+        "realized": 494.2799999999991
+      },
+      {
+        "symbol": "TSLA",
+        "date": "2026-11-02",
+        "time": "10:18 ET",
+        "qty": 50.0,
+        "realized": 68.99000000000228
+      },
+      {
+        "symbol": "WMT",
+        "date": "2026-11-02",
+        "time": "10:22 ET",
+        "qty": 100.0,
+        "realized": 37.999999999999545
+      },
+      {
+        "symbol": "XOM",
+        "date": "2026-11-02",
+        "time": "10:25 ET",
+        "qty": 150.0,
+        "realized": 133.79010000000306
+      },
+      {
+        "symbol": "MMM",
+        "date": "2026-11-02",
+        "time": "10:57 ET",
+        "qty": 150.0,
+        "realized": 168.00000000000068
+      },
+      {
+        "symbol": "META",
+        "date": "2026-11-02",
+        "time": "11:16 ET",
+        "qty": 50.0,
+        "realized": -502.879999999999
+      },
+      {
+        "symbol": "META",
+        "date": "2026-11-02",
+        "time": "11:32 ET",
+        "qty": 50.0,
+        "realized": 111.01999999999634
+      },
+      {
+        "symbol": "WMT",
+        "date": "2026-11-02",
+        "time": "11:56 ET",
+        "qty": 100.0,
+        "realized": 71.88000000000017
+      },
+      {
+        "symbol": "GOOGL",
+        "date": "2026-11-02",
+        "time": "12:46 ET",
+        "qty": 100.0,
+        "realized": -435.0000000000023
+      },
+      {
+        "symbol": "MSFT",
+        "date": "2026-11-02",
+        "time": "13:52 ET",
+        "qty": 100.0,
+        "realized": -796.0000000000036
+      },
+      {
+        "symbol": "AMZN",
+        "date": "2026-11-02",
+        "time": "14:12 ET",
+        "qty": 50.0,
+        "realized": -189.87999999999943
+      },
+      {
+        "symbol": "NVDA",
+        "date": "2026-11-02",
+        "time": "14:25 ET",
+        "qty": 50.0,
+        "realized": -166.17999999999995
+      },
+      {
+        "symbol": "NVDA",
+        "date": "2026-11-02",
+        "time": "14:28 ET",
+        "qty": 50.0,
+        "realized": 28.340000000000032
+      },
+      {
+        "symbol": "JNJ",
+        "date": "2026-11-02",
+        "time": "15:15 ET",
+        "qty": 100.0,
+        "realized": 202.99999999999727
+      },
+      {
+        "symbol": "MSFT",
+        "date": "2026-11-02",
+        "time": "15:30 ET",
+        "qty": 50.0,
+        "realized": -394.4999999999993
+      },
+      {
+        "symbol": "GOOGL",
+        "date": "2026-11-02",
+        "time": "15:51 ET",
+        "qty": 50.0,
+        "realized": -224.5100000000008
+      },
+      {
+        "symbol": "GOOGL",
+        "date": "2026-11-02",
+        "time": "15:55 ET",
+        "qty": 50.0,
+        "realized": -1.5800000000012915
+      },
+      {
+        "symbol": "NVDA",
+        "date": "2026-11-02",
+        "time": "15:58 ET",
+        "qty": 50.0,
+        "realized": -94.40999999999917
+      },
+      {
+        "symbol": "MSFT",
+        "date": "2026-11-02",
+        "time": "15:58 ET",
+        "qty": 50.0,
+        "realized": -189.4200000000012
+      },
+      {
+        "symbol": "META",
+        "date": "2026-11-02",
+        "time": "15:58 ET",
+        "qty": 50.0,
+        "realized": -335.77999999999975
+      },
+      {
+        "symbol": "JNJ",
+        "date": "2026-11-02",
+        "time": "15:58 ET",
+        "qty": 100.0,
+        "realized": -25.0
+      },
+      {
+        "symbol": "ADBE",
+        "date": "2026-11-03",
+        "time": "09:40 ET",
+        "qty": 100.0,
+        "realized": -415.00000000000057
+      },
+      {
+        "symbol": "MSTR",
+        "date": "2026-11-03",
+        "time": "09:46 ET",
+        "qty": 50.0,
+        "realized": 21.119999999999095
+      },
+      {
+        "symbol": "MSFT",
+        "date": "2026-11-03",
+        "time": "09:49 ET",
+        "qty": 50.0,
+        "realized": 48.519999999999186
+      },
+      {
+        "symbol": "MSTR",
+        "date": "2026-11-03",
+        "time": "11:08 ET",
+        "qty": 50.0,
+        "realized": 163.5000000000005
+      },
+      {
+        "symbol": "PFE",
+        "date": "2026-11-03",
+        "time": "11:10 ET",
+        "qty": 150.0,
+        "realized": -79.50000000000017
+      },
+      {
+        "symbol": "SLB",
+        "date": "2026-11-03",
+        "time": "11:21 ET",
+        "qty": 150.0,
+        "realized": 30.139950000000937
+      },
+      {
+        "symbol": "META",
+        "date": "2026-11-03",
+        "time": "11:21 ET",
+        "qty": 100.0,
+        "realized": 640.3200999999967
+      },
+      {
+        "symbol": "NVDA",
+        "date": "2026-11-03",
+        "time": "12:33 ET",
+        "qty": 50.0,
+        "realized": 2.2599999999997067
+      },
+      {
+        "symbol": "MSFT",
+        "date": "2026-11-03",
+        "time": "12:34 ET",
+        "qty": 50.0,
+        "realized": 23.579999999998336
+      },
+      {
+        "symbol": "META",
+        "date": "2026-11-03",
+        "time": "12:48 ET",
+        "qty": 20.0,
+        "realized": 25.25000000000091
+      },
+      {
+        "symbol": "META",
+        "date": "2026-11-03",
+        "time": "12:49 ET",
+        "qty": 50.0,
+        "realized": 84.49999999999704
+      },
+      {
+        "symbol": "BAC",
+        "date": "2026-11-03",
+        "time": "13:04 ET",
+        "qty": 100.0,
+        "realized": 30.400000000000205
+      },
+      {
+        "symbol": "NVDA",
+        "date": "2026-11-03",
+        "time": "13:05 ET",
+        "qty": 50.0,
+        "realized": 0.0
+      },
+      {
+        "symbol": "AMZN",
+        "date": "2026-11-03",
+        "time": "13:17 ET",
+        "qty": 50.0,
+        "realized": 140.99999999999966
+      },
+      {
+        "symbol": "MSFT",
+        "date": "2026-11-03",
+        "time": "14:50 ET",
+        "qty": 50.0,
+        "realized": 9.199999999998454
+      },
+      {
+        "symbol": "MSTR",
+        "date": "2026-11-03",
+        "time": "14:54 ET",
+        "qty": 50.0,
+        "realized": -143.99999999999977
+      },
+      {
+        "symbol": "MSTR",
+        "date": "2026-11-03",
+        "time": "14:55 ET",
+        "qty": 50.0,
+        "realized": -74.50000000000045
+      },
+      {
+        "symbol": "MSTR",
+        "date": "2026-11-03",
+        "time": "14:59 ET",
+        "qty": 50.0,
+        "realized": -60.99999999999994
+      },
+      {
+        "symbol": "MSTR",
+        "date": "2026-11-03",
+        "time": "15:00 ET",
+        "qty": 50.0,
+        "realized": -14.499999999999602
+      },
+      {
+        "symbol": "MSTR",
+        "date": "2026-11-03",
+        "time": "15:01 ET",
+        "qty": 50.0,
+        "realized": -3.4199999999998454
+      },
+      {
+        "symbol": "MSTR",
+        "date": "2026-11-03",
+        "time": "15:02 ET",
+        "qty": 50.0,
+        "realized": -3.0600000000006844
+      },
+      {
+        "symbol": "MSTR",
+        "date": "2026-11-03",
+        "time": "15:07 ET",
+        "qty": 50.0,
+        "realized": 12.999999999999545
+      },
+      {
+        "symbol": "MSTR",
+        "date": "2026-11-03",
+        "time": "15:09 ET",
+        "qty": 50.0,
+        "realized": 22.699999999998965
+      },
+      {
+        "symbol": "MSTR",
+        "date": "2026-11-03",
+        "time": "15:12 ET",
+        "qty": 50.0,
+        "realized": -0.49999999999954525
+      },
+      {
+        "symbol": "MSTR",
+        "date": "2026-11-03",
+        "time": "15:13 ET",
+        "qty": 50.0,
+        "realized": -15.500000000000114
+      },
+      {
+        "symbol": "MSTR",
+        "date": "2026-11-03",
+        "time": "15:14 ET",
+        "qty": 50.0,
+        "realized": -23.99999999999949
+      },
+      {
+        "symbol": "MSTR",
+        "date": "2026-11-03",
+        "time": "15:14 ET",
+        "qty": 50.0,
+        "realized": -14.119999999999777
+      },
+      {
+        "symbol": "AMZN",
+        "date": "2026-11-03",
+        "time": "15:32 ET",
+        "qty": 50.0,
+        "realized": 55.02999999999929
+      },
+      {
+        "symbol": "JNJ",
+        "date": "2026-11-03",
+        "time": "15:40 ET",
+        "qty": 100.0,
+        "realized": -411.5600000000029
+      },
+      {
+        "symbol": "GOOGL",
+        "date": "2026-11-03",
+        "time": "15:55 ET",
+        "qty": 50.0,
+        "realized": -13.134999999999764
+      },
+      {
+        "symbol": "MSFT",
+        "date": "2026-11-03",
+        "time": "15:56 ET",
+        "qty": 50.0,
+        "realized": 20.08000000000152
+      },
+      {
+        "symbol": "GOOGL",
+        "date": "2026-11-03",
+        "time": "15:56 ET",
+        "qty": 100.0,
+        "realized": 69.32509999999752
+      },
+      {
+        "symbol": "SLB",
+        "date": "2026-11-03",
+        "time": "15:58 ET",
+        "qty": 150.0,
+        "realized": -56.99999999999932
+      },
+      {
+        "symbol": "NVDA",
+        "date": "2026-11-03",
+        "time": "15:58 ET",
+        "qty": 50.0,
+        "realized": -75.2600000000001
+      },
+      {
+        "symbol": "META",
+        "date": "2026-11-03",
+        "time": "15:58 ET",
+        "qty": 50.0,
+        "realized": -107.13999999999828
+      },
+      {
+        "symbol": "JNJ",
+        "date": "2026-11-03",
+        "time": "15:58 ET",
+        "qty": 100.0,
+        "realized": 39.699999999999136
+      }
+    ],
+    "closed_wins": 30,
+    "closed_losses": 29,
+    "best_close": {
+      "symbol": "META",
+      "date": "2026-11-03",
+      "time": "11:21 ET",
+      "qty": 100.0,
+      "realized": 640.3200999999967
+    },
+    "worst_close": {
+      "symbol": "MSFT",
+      "date": "2026-11-02",
+      "time": "13:52 ET",
+      "qty": 100.0,
+      "realized": -796.0000000000036
+    }
   }
 }

@@ -16,38 +16,45 @@ section{margin-top:36px} h2{margin:0;font-size:28px}
 .tabs{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 2px} .tbtn{font:inherit;font-size:15px;font-weight:700;color:var(--muted);background:var(--panel);border:1px solid var(--line-soft);border-radius:999px;padding:9px 18px;cursor:pointer} .tbtn.active{color:#04121a;background:linear-gradient(92deg,var(--green),var(--cyan));border-color:transparent} .tbtn.pm{margin-left:auto;color:var(--cyan)} .tabview{display:none} .tabview.active{display:block} .legchip{font-family:var(--mono);font-size:12px;font-weight:700;padding:4px 9px;border-radius:6px;background:rgba(120,150,200,.12);border:1px solid var(--line-soft);color:var(--muted);display:inline-block;margin:3px}
 .legchip.g{color:var(--green);border-color:rgba(34,229,132,.35)} .legrow{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
 </style></head><body><div class="wrap">
-<p class="faint">ALGO DESK · Updated 2026-11-03 15:21 ET · New + AI accounts only · Old shared account is on the AlphaScout dashboard, not here</p>
-<h1>ALGO DESK</h1><p>Portfolio. Balances. Transactions.</p>
-<p class="muted">ALGO DESK follows the robot traders, in the same look as AlphaScout — but only these two accounts: the new main account for the regular robots, and the For AI account for Momentum and AI Analyst. AlphaScout is not in here — it runs on its own account, untouched. Both accounts closed flat on Day 0, Mon Nov 2, 2026 — the starting line for the first Muse run. Portfolio, balances, and transactions refresh weekdays at about 10:23 AM and 4:23 PM ET. Post-Mortem charts live on their own page, linked above.</p>
-<div class="stats">
-<div class="stat"><div class="n">$231,151.23</div><div class="l">Combined portfolio</div></div>
-<div class="stat"><div class="n">$101,083.63</div><div class="l">Combined cash</div></div>
-<div class="stat"><div class="n">$681,421.80</div><div class="l">Combined buying power</div></div>
-<div class="stat"><div class="n">10</div><div class="l">Open positions</div></div>
-</div>
+<p class="faint">ALGO DESK · Updated 2026-11-03 16:38 ET · New + AI accounts only</p>
+<h1>ALGO DESK</h1>
 <nav class="tabs" role="tablist" aria-label="Dashboard views">
 <button class="tbtn active" type="button" data-view="portfolio">Portfolio</button>
 <button class="tbtn" type="button" data-view="balances">Balances</button>
 <button class="tbtn" type="button" data-view="transactions">Transactions</button>
 <button class="tbtn pm" type="button" onclick="location.href='post-mortem.html'">Post-Mortem →</button>
 </nav>
-<section id="view-portfolio" class="tabview active"><h2>Portfolio — Open Positions</h2><div class="grid"><div class="card"><div class="card-top"><div><div class="tick">AMZN</div><div class="cname">50 shares · NEW</div></div><div class="price"><div class="p">$12,594.50</div></div></div><div class="psub">Unrealized <span class="g">$53.00</span></div></div>
-<div class="card"><div class="card-top"><div><div class="tick">GOOGL</div><div class="cname">50 shares · NEW</div></div><div class="price"><div class="p">$13,945.00</div></div></div><div class="psub">Unrealized <span class="g">$2.97</span></div></div>
-<div class="card"><div class="card-top"><div><div class="tick">META</div><div class="cname">20 shares · NEW</div></div><div class="price"><div class="p">$12,391.10</div></div></div><div class="psub">Unrealized <span class="r">$-75.70</span></div></div>
-<div class="card"><div class="card-top"><div><div class="tick">MSFT</div><div class="cname">-50 shares · NEW</div></div><div class="price"><div class="p">$-26,151.50</div></div></div><div class="psub">Unrealized <span class="r">$-618.48</span></div></div>
-<div class="card"><div class="card-top"><div><div class="tick">MSTR</div><div class="cname">100 shares · NEW</div></div><div class="price"><div class="p">$13,522.00</div></div></div><div class="psub">Unrealized <span class="g">$27.70</span></div></div>
-<div class="card"><div class="card-top"><div><div class="tick">GOOGL</div><div class="cname">100 shares · AI</div></div><div class="price"><div class="p">$27,886.00</div></div></div><div class="psub">Unrealized <span class="r">$-126.27</span></div></div>
-<div class="card"><div class="card-top"><div><div class="tick">JNJ</div><div class="cname">100 shares · AI</div></div><div class="price"><div class="p">$26,687.00</div></div></div><div class="psub">Unrealized <span class="r">$-275.56</span></div></div>
-<div class="card"><div class="card-top"><div><div class="tick">META</div><div class="cname">50 shares · AI</div></div><div class="price"><div class="p">$30,978.00</div></div></div><div class="psub">Unrealized <span class="r">$-187.16</span></div></div>
-<div class="card"><div class="card-top"><div><div class="tick">NVDA</div><div class="cname">50 shares · AI</div></div><div class="price"><div class="p">$10,351.00</div></div></div><div class="psub">Unrealized <span class="r">$-71.76</span></div></div>
-<div class="card"><div class="card-top"><div><div class="tick">SLB</div><div class="cname">150 shares · AI</div></div><div class="price"><div class="p">$7,861.50</div></div></div><div class="psub">Unrealized <span class="r">$-15.00</span></div></div>
-</div></section>
+<section id="view-portfolio" class="tabview active"><h2>How the trades did</h2><div class="stats">
+<div class="stat"><div class="n">$231,561.18</div><div class="l">Combined portfolio · vs Day 0 <span class="r">$-350.53 (-0.15%)</span></div></div>
+<div class="stat"><div class="n"><span class="r">$-1,722.49</span></div><div class="l">Realized P&amp;L · matched (-0.16% of matched cost)</div></div>
+<div class="stat"><div class="n"><span class="g">$184.21</span></div><div class="l">Unrealized P&amp;L · open positions</div></div>
+<div class="stat"><div class="n">51%</div><div class="l">Win rate · 30W – 29L matched closes</div></div>
+<div class="stat"><div class="n">META <span class="g">$640.32</span></div><div class="l">Best closed · 2026-11-03 11:21 ET</div></div>
+<div class="stat"><div class="n">MSFT <span class="r">$-796.00</span></div><div class="l">Worst closed · 2026-11-02 13:52 ET</div></div>
+</div>
+<p class="faint">2 open positions · 135 fills since Day 0 · 60 matched closes. Realized and win rate cover only sells matched to buys in our ledger; exits of holdings open before Day 0 are excluded, since their entry price was never recorded.</p>
+<h2>Portfolio — Open Positions</h2><div class="grid"><div class="card"><div class="card-top"><div><div class="tick">META</div><div class="cname">20 shares · NEW</div></div><div class="price"><div class="p">$12,435.80</div></div></div><div class="psub">Unrealized <span class="r">$-31.00</span></div></div>
+<div class="card"><div class="card-top"><div><div class="tick">MSTR</div><div class="cname">150 shares · NEW</div></div><div class="price"><div class="p">$20,478.00</div></div></div><div class="psub">Unrealized <span class="g">$215.21</span></div></div>
+<p class="muted">No open positions on this account.</p></div></section>
 <section id="view-balances" class="tabview"><h2>Balances</h2><div class="grid">
-<div class="card"><div class="tick">Combined</div><div class="cname">New + AI accounts</div><div class="psub">Cash $101,083.63<br>Buying power $681,421.80<br>Portfolio $231,151.23<br>Positions 10<br>vs Day 0 ($231,911.71): <span class="r">$-760.48</span></div></div>
-<div class="card"><div class="tick">New Main</div><div class="cname">Regular robots</div><div class="psub">Cash $73,262.66<br>Buying power $279,593.12<br>Portfolio $99,564.26<br>Positions 5<br>Open unrealized $-610.51<br>vs Day 0 ($100,000.00): <span class="r">$-435.74</span></div></div>
-<div class="card"><div class="tick">For AI</div><div class="cname">Momentum + AI Analyst</div><div class="psub">Cash $27,820.97<br>Buying power $401,828.68<br>Portfolio $131,586.97<br>Positions 5<br>Open unrealized $-675.75<br>vs Day 0 ($131,911.71): <span class="r">$-324.74</span></div></div>
+<div class="card"><div class="tick">Combined</div><div class="cname">New + AI accounts</div><div class="psub">Cash $198,647.38<br>Buying power $849,887.76<br>Portfolio $231,561.18<br>Positions 2<br>vs Day 0 ($231,911.71): <span class="r">$-350.53</span></div></div>
+<div class="card"><div class="tick">New Main</div><div class="cname">Regular robots</div><div class="psub">Cash $66,973.12<br>Buying power $323,190.72<br>Portfolio $99,886.92<br>Positions 2<br>Open unrealized $184.21<br>vs Day 0 ($100,000.00): <span class="r">$-113.08</span></div></div>
+<div class="card"><div class="tick">For AI</div><div class="cname">Momentum + AI Analyst</div><div class="psub">Cash $131,674.26<br>Buying power $526,697.04<br>Portfolio $131,674.26<br>Positions 0<br>Open unrealized $0.00<br>vs Day 0 ($131,911.71): <span class="r">$-237.45</span></div></div>
 </div></section>
-<section id="view-transactions" class="tabview"><h2>Transactions — all fills since Day 0, newest first (New: 40, AI: 82)</h2><div class="grid"><div class="card"><div class="card-top"><div><div class="tick">MSTR</div><div class="cname">2026-11-03 15:14 ET · NEW</div></div><div class="price"><div class="p">$134.61</div></div></div><div class="psub">SELL 50 shares · total $6,730.50</div></div>
+<section id="view-transactions" class="tabview"><h2>Transactions — all fills since Day 0, newest first (New: 44, AI: 91)</h2><div class="grid"><div class="card"><div class="card-top"><div><div class="tick">SLB</div><div class="cname">2026-11-03 15:58 ET · AI</div></div><div class="price"><div class="p">$52.13</div></div></div><div class="psub">SELL 150 shares · total $7,819.50</div></div>
+<div class="card"><div class="card-top"><div><div class="tick">NVDA</div><div class="cname">2026-11-03 15:58 ET · AI</div></div><div class="price"><div class="p">$206.95</div></div></div><div class="psub">SELL 50 shares · total $10,347.50</div></div>
+<div class="card"><div class="card-top"><div><div class="tick">META</div><div class="cname">2026-11-03 15:58 ET · AI</div></div><div class="price"><div class="p">$621.16</div></div></div><div class="psub">SELL 50 shares · total $31,058.02</div></div>
+<div class="card"><div class="card-top"><div><div class="tick">JNJ</div><div class="cname">2026-11-03 15:58 ET · AI</div></div><div class="price"><div class="p">$265.92</div></div></div><div class="psub">SELL 100 shares · total $26,591.70</div></div>
+<div class="card"><div class="card-top"><div><div class="tick">MSFT</div><div class="cname">2026-11-03 15:56 ET · AI</div></div><div class="price"><div class="p">$522.13</div></div></div><div class="psub">SELL 50 shares · total $26,106.74</div></div>
+<div class="card"><div class="card-top"><div><div class="tick">GOOGL</div><div class="cname">2026-11-03 15:56 ET · AI</div></div><div class="price"><div class="p">$280.17</div></div></div><div class="psub">SELL 100 shares · total $28,017.49</div></div>
+<div class="card"><div class="card-top"><div><div class="tick">GOOGL</div><div class="cname">2026-11-03 15:55 ET · NEW</div></div><div class="price"><div class="p">$279.86</div></div></div><div class="psub">SELL 50 shares · total $13,993.00</div></div>
+<div class="card"><div class="card-top"><div><div class="tick">MSFT</div><div class="cname">2026-11-03 15:55 ET · NEW</div></div><div class="price"><div class="p">$522.21</div></div></div><div class="psub">BUY 50 shares · total $26,110.58</div></div>
+<div class="card"><div class="card-top"><div><div class="tick">MSFT</div><div class="cname">2026-11-03 15:47 ET · AI</div></div><div class="price"><div class="p">$521.73</div></div></div><div class="psub">BUY 50 shares · total $26,086.66</div></div>
+<div class="card"><div class="card-top"><div><div class="tick">JNJ</div><div class="cname">2026-11-03 15:41 ET · AI</div></div><div class="price"><div class="p">$265.52</div></div></div><div class="psub">BUY 100 shares · total $26,552.00</div></div>
+<div class="card"><div class="card-top"><div><div class="tick">JNJ</div><div class="cname">2026-11-03 15:40 ET · AI</div></div><div class="price"><div class="p">$265.51</div></div></div><div class="psub">SELL 100 shares · total $26,551.00</div></div>
+<div class="card"><div class="card-top"><div><div class="tick">AMZN</div><div class="cname">2026-11-03 15:32 ET · NEW</div></div><div class="price"><div class="p">$251.93</div></div></div><div class="psub">SELL 50 shares · total $12,596.53</div></div>
+<div class="card"><div class="card-top"><div><div class="tick">MSTR</div><div class="cname">2026-11-03 15:25 ET · NEW</div></div><div class="price"><div class="p">$135.37</div></div></div><div class="psub">BUY 50 shares · total $6,768.49</div></div>
+<div class="card"><div class="card-top"><div><div class="tick">MSTR</div><div class="cname">2026-11-03 15:14 ET · NEW</div></div><div class="price"><div class="p">$134.61</div></div></div><div class="psub">SELL 50 shares · total $6,730.50</div></div>
 <div class="card"><div class="card-top"><div><div class="tick">MSTR</div><div class="cname">2026-11-03 15:14 ET · NEW</div></div><div class="price"><div class="p">$134.84</div></div></div><div class="psub">BUY 50 shares · total $6,742.00</div></div>
 <div class="card"><div class="card-top"><div><div class="tick">MSTR</div><div class="cname">2026-11-03 15:14 ET · NEW</div></div><div class="price"><div class="p">$134.77</div></div></div><div class="psub">SELL 50 shares · total $6,738.50</div></div>
 <div class="card"><div class="card-top"><div><div class="tick">MSTR</div><div class="cname">2026-11-03 15:14 ET · NEW</div></div><div class="price"><div class="p">$134.85</div></div></div><div class="psub">BUY 50 shares · total $6,742.50</div></div>
