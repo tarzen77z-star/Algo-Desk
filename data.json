@@ -1,5 +1,5 @@
 {
-  "generated_at_et": "2026-11-02 20:14 ET",
+  "generated_at_et": "2026-11-02 20:21 ET",
   "day0_date": "2026-11-02",
   "new": {
     "label": "New Main (legacy main robots)",
@@ -575,5 +575,164 @@
     "buying_power": 927646.84,
     "portfolio": 231911.71,
     "positions": 0
+  },
+  "post_mortem": {
+    "symbols": [
+      {
+        "symbol": "AMZN",
+        "buys": 1,
+        "sells": 2,
+        "buy_qty": 50.0,
+        "sell_qty": 100.0,
+        "matched_qty": 50.0,
+        "matched_realized": -189.87999999999943,
+        "prior_exit_qty": 50.0,
+        "open_lots_qty": 0
+      },
+      {
+        "symbol": "COIN",
+        "buys": 2,
+        "sells": 2,
+        "buy_qty": 300.0,
+        "sell_qty": 300.0,
+        "matched_qty": 300.0,
+        "matched_realized": 563.5799999999974,
+        "prior_exit_qty": 0.0,
+        "open_lots_qty": 0
+      },
+      {
+        "symbol": "CRM",
+        "buys": 0,
+        "sells": 1,
+        "buy_qty": 0,
+        "sell_qty": 150.0,
+        "matched_qty": 0.0,
+        "matched_realized": 0.0,
+        "prior_exit_qty": 150.0,
+        "open_lots_qty": 0
+      },
+      {
+        "symbol": "GOOGL",
+        "buys": 3,
+        "sells": 4,
+        "buy_qty": 200.0,
+        "sell_qty": 250.0,
+        "matched_qty": 200.0,
+        "matched_realized": -661.0900000000044,
+        "prior_exit_qty": 50.0,
+        "open_lots_qty": 0
+      },
+      {
+        "symbol": "HON",
+        "buys": 0,
+        "sells": 1,
+        "buy_qty": 0,
+        "sell_qty": 100.0,
+        "matched_qty": 0.0,
+        "matched_realized": 0.0,
+        "prior_exit_qty": 100.0,
+        "open_lots_qty": 0
+      },
+      {
+        "symbol": "JNJ",
+        "buys": 2,
+        "sells": 2,
+        "buy_qty": 200.0,
+        "sell_qty": 200.0,
+        "matched_qty": 200.0,
+        "matched_realized": 177.99999999999727,
+        "prior_exit_qty": 0.0,
+        "open_lots_qty": 0
+      },
+      {
+        "symbol": "MA",
+        "buys": 0,
+        "sells": 1,
+        "buy_qty": 0,
+        "sell_qty": 150.0,
+        "matched_qty": 0.0,
+        "matched_realized": 0.0,
+        "prior_exit_qty": 150.0,
+        "open_lots_qty": 0
+      },
+      {
+        "symbol": "META",
+        "buys": 3,
+        "sells": 3,
+        "buy_qty": 150.0,
+        "sell_qty": 150.0,
+        "matched_qty": 150.0,
+        "matched_realized": -727.6400000000024,
+        "prior_exit_qty": 0.0,
+        "open_lots_qty": 0
+      },
+      {
+        "symbol": "MMM",
+        "buys": 1,
+        "sells": 1,
+        "buy_qty": 150.0,
+        "sell_qty": 150.0,
+        "matched_qty": 150.0,
+        "matched_realized": 168.00000000000068,
+        "prior_exit_qty": 0.0,
+        "open_lots_qty": 0
+      },
+      {
+        "symbol": "MSFT",
+        "buys": 4,
+        "sells": 5,
+        "buy_qty": 250.0,
+        "sell_qty": 300.0,
+        "matched_qty": 250.0,
+        "matched_realized": -1320.2999500000033,
+        "prior_exit_qty": 50.0,
+        "open_lots_qty": 0
+      },
+      {
+        "symbol": "NVDA",
+        "buys": 3,
+        "sells": 3,
+        "buy_qty": 150.0,
+        "sell_qty": 150.0,
+        "matched_qty": 150.0,
+        "matched_realized": -232.2499999999991,
+        "prior_exit_qty": 0.0,
+        "open_lots_qty": 0
+      },
+      {
+        "symbol": "TSLA",
+        "buys": 2,
+        "sells": 2,
+        "buy_qty": 100.0,
+        "sell_qty": 100.0,
+        "matched_qty": 100.0,
+        "matched_realized": 328.9900000000017,
+        "prior_exit_qty": 0.0,
+        "open_lots_qty": 0
+      },
+      {
+        "symbol": "WMT",
+        "buys": 2,
+        "sells": 2,
+        "buy_qty": 200.0,
+        "sell_qty": 200.0,
+        "matched_qty": 200.0,
+        "matched_realized": 109.87999999999971,
+        "prior_exit_qty": 0.0,
+        "open_lots_qty": 0
+      },
+      {
+        "symbol": "XOM",
+        "buys": 1,
+        "sells": 2,
+        "buy_qty": 150.0,
+        "sell_qty": 300.0,
+        "matched_qty": 150.0,
+        "matched_realized": 133.79010000000306,
+        "prior_exit_qty": 150.0,
+        "open_lots_qty": 0
+      }
+    ],
+    "total_matched_realized": -1648.9198500000086
   }
 }
