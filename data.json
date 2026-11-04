@@ -1,29 +1,29 @@
 {
-  "generated_at_et": "2026-11-04 16:59 ET",
+  "generated_at_et": "2026-11-04 18:21 ET",
   "day0_date": "2026-11-02",
   "new": {
     "label": "New Main (legacy main robots)",
     "cash": 72441.76,
-    "buying_power": 335986.1,
-    "portfolio": 100865.58,
+    "buying_power": 336036.67,
+    "portfolio": 100888.92,
     "positions": [
       {
         "symbol": "AMZN",
         "qty": 50.0,
-        "mv": 13267.5,
-        "upl": -190.61
+        "mv": 13281.5,
+        "upl": -176.61
       },
       {
         "symbol": "GOOGL",
         "qty": 50.0,
-        "mv": 14564.5,
-        "upl": 8.62
+        "mv": 14580.0,
+        "upl": 24.12
       },
       {
         "symbol": "MSFT",
         "qty": -11.0,
-        "mv": -6098.18,
-        "upl": -9.4974
+        "mv": -6104.34,
+        "upl": -15.6574
       },
       {
         "symbol": "TSLA261120P00400000",
@@ -789,32 +789,32 @@
   "ai": {
     "label": "For AI (momentum + ai_analyst)",
     "cash": -20509.84,
-    "buying_power": 346801.64,
-    "portfolio": 132647.66,
+    "buying_power": 346299.04,
+    "portfolio": 132468.16,
     "positions": [
       {
         "symbol": "AMZN",
         "qty": 100.0,
-        "mv": 26535.0,
-        "upl": -318.0
+        "mv": 26563.0,
+        "upl": -290.0
       },
       {
         "symbol": "HD",
         "qty": 100.0,
-        "mv": 35578.5,
-        "upl": 95.5
+        "mv": 35478.0,
+        "upl": -5.0
       },
       {
         "symbol": "META",
         "qty": 100.0,
-        "mv": 63325.0,
-        "upl": 311.93
+        "mv": 63190.0,
+        "upl": 176.93
       },
       {
         "symbol": "MSFT",
         "qty": 50.0,
-        "mv": 27719.0,
-        "upl": -212.54
+        "mv": 27747.0,
+        "upl": -184.54
       }
     ],
     "transactions": [
@@ -2073,17 +2073,28 @@
   },
   "combined": {
     "cash": 51931.92,
-    "buying_power": 682787.74,
-    "portfolio": 233513.24,
+    "buying_power": 682335.71,
+    "portfolio": 233357.08000000002,
     "positions": 8
+  },
+  "returns": {
+    "start_equity": 231911.71,
+    "gain": 1445.3700000000244,
+    "roe_pct": 0.6232414913416939,
+    "deployed": 193633.84,
+    "deployed_pct": 0.7464449395828872,
+    "new_gain": 888.9199999999983,
+    "ai_gain": 556.4500000000116,
+    "new_roe_pct": 0.8889199999999983,
+    "ai_roe_pct": 0.421835180515825
   },
   "today": {
     "baseline_date": "2026-11-03",
     "baseline_combined": 231462.88,
-    "pl": 2050.359999999986,
-    "pct": 0.8858267036165738,
-    "new_pl": 1076.9600000000064,
-    "ai_pl": 973.3999999999942
+    "pl": 1894.2000000000116,
+    "pct": 0.8183601621132562,
+    "new_pl": 1100.300000000003,
+    "ai_pl": 793.8999999999942
   },
   "post_mortem": {
     "symbols": [
